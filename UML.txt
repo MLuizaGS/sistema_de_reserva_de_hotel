@@ -1,0 +1,47 @@
+SISTEMA DE RESERVA DE HOTEL
+│
+├── Pessoa
+│   ├── nome
+│   ├── documento
+│   ├── email
+│   └── telefone
+│
+│       ▲
+│       │ herança
+│       │
+├── Hospede
+│   └── reservas
+│
+├── Quarto
+│   ├── numero
+│   ├── tipo
+│   ├── capacidade
+│   ├── tarifa_base
+│   └── status
+│
+│       ▲
+│       │ herança
+│       ├── QuartoSimples
+│       ├── QuartoDuplo
+│       └── QuartoLuxo
+│
+├── Reserva
+│   ├── hospede
+│   ├── quarto
+│   ├── data_entrada
+│   ├── data_saida
+│   ├── quantidade_hospedes
+│   ├── origem
+│   ├── status
+│   ├── pagamentos
+│   └── adicionais
+│
+├── Pagamento
+│   ├── data
+│   ├── forma
+│   └── valor
+│
+└── Adicional
+    ├── descricao
+    └── valor
+
