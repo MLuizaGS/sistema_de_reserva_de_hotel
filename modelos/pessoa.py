@@ -6,8 +6,4 @@ class Pessoa:
     pelas classes derivadas.
     """
 
-    def __init__(self, nome, documento, email, telefone):
-        self.nome = nome
-        self.documento = documento
-        self.email = email
-        self.telefone = telefone
+pass
