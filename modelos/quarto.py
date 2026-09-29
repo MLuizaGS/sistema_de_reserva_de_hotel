@@ -5,14 +5,7 @@ class Quarto:
     Armazena informações básicas como número, tipo,
     capacidade, tarifa e status.
     """
-
-    def __init__(self, numero, tipo, capacidade, tarifa_base):
-        self.numero = numero
-        self.tipo = tipo
-        self.capacidade = capacidade
-        self.tarifa_base = tarifa_base
-        self.status = "DISPONIVEL"
-
+    pass
 
 class QuartoSimples(Quarto):
     """
