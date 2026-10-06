@@ -8,4 +8,17 @@ class Hospede(Pessoa):
     Herda os atributos básicos da classe Pessoa e mantém
     o histórico de reservas realizadas.
     """
-pass
+    def __init__(self, nome, documento, email, telefone):
+        super().__init__(nome, documento, email, telefone)  
+        
+        self.reservas = []  # começa sem nenhuma reserva
+
+    def adicionar_reserva(self, reserva):
+        self.reservas.append(reserva)
+
+    def historico_reservas(self):
+        return self.reservas
+
+    def __str__(self):
+        return f"{self.nome} ({self.documento})"
+
